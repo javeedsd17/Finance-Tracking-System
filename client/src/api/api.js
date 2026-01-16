@@ -6,6 +6,7 @@ import {
 } from "../utils/toast";
 import { loaderControl } from "../utils/loaderControl"; // 👈 loader utility
 
+const BACKEND_URL = import.meta.env.VITE_API_URL;
 const BASE_URL = `${import.meta.env.VITE_API_URL}/api/v1`;
 
 
