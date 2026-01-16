@@ -7,7 +7,13 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",   // local frontend
+    "https://https://finance-tracking-system-snowy.vercel.app/" // deployed frontend
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // Test Route
