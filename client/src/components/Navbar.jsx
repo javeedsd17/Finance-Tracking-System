@@ -25,7 +25,7 @@ const Navbar = () => {
           to="/home"
           className="text-xl font-extrabold tracking-tight flex items-center bg-gradient-to-r from-[#001f3f] via-cyan-400 to-cyan-200 bg-clip-text text-transparent"
         >
-          <img src="/animations/logo1.png" alt="" className="h-12" /> Finance
+          <img src="/animations/logo1.png" alt="" className="h-12" /> Expensync
         </Link>
 
         <div className="flex items-center gap-4 md:gap-6">
