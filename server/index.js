@@ -4,6 +4,10 @@ const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
+
+// ✅ Fix for Render / proxies (rate limit + correct IP)
+app.set("trust proxy", 1);
+
 const PORT = process.env.PORT || 5000;
 
 // ✅ Middlewares
