@@ -32,7 +32,7 @@ const TransactionSchema = new mongoose.Schema(
         "Utilities"
       ], 
       default: "Others", 
-      trim: true 
+      set: (v) => (typeof v === "string" ? v.trim() : v), 
     },
 
     note: { 
