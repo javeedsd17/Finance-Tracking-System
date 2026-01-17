@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://YOUR-FRONTEND.onrender.com"
+    "https://finance-tracking-system-1.onrender.com"
   ],
   credentials: true
 }));
